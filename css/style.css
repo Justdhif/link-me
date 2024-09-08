@@ -25,6 +25,28 @@
     font-size: 20px;
 }
 
+.judul {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.judul .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.judul a {
+    color: #25D366;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 600;
+}
+
 header {
     position: relative;
     width: 100%;
@@ -122,4 +144,93 @@ header .desc_acc h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.read_more {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #1D2B53;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.skill {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    background-image: url(../aset/bg.webp);
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.skill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000055;
+}
+
+.skill .side {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.skill .side .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #1D2B53;
+    margin-top: 10px;
+    border-radius: 100%;
+}
+
+.btn.active {
+    border: 2px solid #fff;
+}
+
+.skill .skill_content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill .skill_content i {
+    font-size: 35px;
+    color: #0ef;
+    background: #1d2b5349;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.skill .skill_content h3 {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 5px;
 }
