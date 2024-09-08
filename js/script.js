@@ -24,3 +24,21 @@ cssBtn.addEventListener('click', () => {
     htmlBtn.classList.remove('active');
     cssBtn.classList.add('active');
 })
+
+const readMore = document.querySelector('.read_more');
+
+readMore.addEventListener('click', () => {
+    document.querySelector('.skill_container').classList.toggle('active');
+
+    if (document.querySelector('.skill_container').classList.contains('active')) {
+        document.querySelector('.read_more h3').textContent = 'Close';
+        document.getElementById('arrow').style.transform = 'rotate(90deg)';
+        document.querySelector('.back_top').style.display = 'flex';
+    }
+
+    else {
+        document.querySelector('.read_more h3').textContent = 'See more';
+        document.getElementById('arrow').style.transform = 'rotate(-90deg)';
+        document.querySelector('.back_top').style.display = 'none';
+    }
+})

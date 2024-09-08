@@ -66,25 +66,49 @@
 
             <div class="read_more">
                 <h3>See more</h3>
-                <i class="fa-solid fa-angles-left" style="transform: rotate(-90deg); font-size: 20px;"></i>
+                <i class="fa-solid fa-angles-left" style="transform: rotate(-90deg);" id="arrow"></i>
             </div>
 
-            <h1 style="margin-top: 20px;" class="title"><i class="fa-regular fa-circle-dot"></i> Skill</h1>
-            <div class="skill">
-                <div class="side">
-                    <div class="btn active" id="html"><i class="fa-brands fa-html5"></i></div>
-                    <div class="btn" id="css"><i class="fa-brands fa-css3-alt"></i></div>
-                    <div class="btn" id="js"><i class="fa-brands fa-square-js"></i></div>
+            <div class="skill_container">
+                <h1 style="margin-top: 20px;" class="title"><i class="fa-regular fa-circle-dot"></i> Skill</h1>
+                <div class="skill">
+                    <div class="side">
+                        <div class="btn active" id="html"><i class="fa-brands fa-html5"></i></div>
+                        <div class="btn" id="css"><i class="fa-brands fa-css3-alt"></i></div>
+                        <!-- <div class="btn" id="js"><i class="fa-brands fa-square-js"></i></div> -->
+                    </div>
+                    <div class="skill_content" id="html_content">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill_content" id="css_content" style="display: none;">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
                 </div>
-                <div class="skill_content" id="html_content">
-                    <i class="fa-brands fa-html5"></i>
-                    <h3>HTML</h3>
+
+                <div class="detail_skill html">
+                    <div class="left">
+                        <i class="fa-brands fa-html5"></i>
+                        <div class="line"></div>
+                    </div>
+                    <h3>80%</h3>
                 </div>
-                <div class="skill_content" id="css_content" style="display: none;">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <h3>CSS</h3>
+                <div class="detail_skill css">
+                    <div class="left">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <div class="line"></div>
+                    </div>
+                    <h3>66%</h3>
                 </div>
             </div>
+
+            <a href="#" class="back_top">
+                <div class="top">
+                    <h3>Back to top</h3>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+            </a>
         </div>
     </section>
 
