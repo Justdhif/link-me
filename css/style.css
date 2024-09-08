@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #161616;
+    --main-color: #ffa73c;
+    --text-color: #fff;
+}
+
+.body {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.title {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url(../aset/beach.jpg) center no-repeat;
+}
+
+header .desc_acc {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .desc_acc .img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 10px solid #fff;
+    z-index: 20;
+}
+
+header .desc_acc .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .desc_acc h1 {
+    font-family: "Playwrite US Modern", cursive;
+}
+
+.box_sosmed {
+    padding: 45px 20px 20px;
+    margin-top: 10px;
+}
+
+.box_sosmed .box {
+    margin-top: 15px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #00000047;
+}
+
+.box_sosmed .box i {
+    font-size: 30px;
+}
+
+.WhatsApp {
+    color: #25D366;
+}
+
+.github {
+    color: #000;
+}
+
+.instagram {
+    color: #cc39a4;
+}
+
+.Telegram {
+    color: #03A9F4;
+}
+
+.box_song {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #00000047;
+    margin-top: 15px;
+}
+
+.box_song .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box_song .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
