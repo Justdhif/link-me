@@ -42,3 +42,36 @@ readMore.addEventListener('click', () => {
         document.querySelector('.back_top').style.display = 'none';
     }
 })
+
+window.onscroll = () => {
+
+    let header = document.querySelector('.header');
+
+    header.classList.toggle('sticky', window.scrollY > 200);
+};
+
+const secret = document.querySelector('.secret');
+const masuk = document.querySelector('.masuk');
+const btnSecret = document.querySelector('.secret_page');
+
+masuk.addEventListener('click', () => {
+    secret.classList.add('active');
+})
+
+btnSecret.addEventListener('click', () => {
+    secret.classList.add('active');
+})
+
+document.querySelector('.btn_close').addEventListener('click', () => {
+    secret.classList.remove('active');
+})
+
+document.querySelector('.form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const input = document.getElementById('input').value;
+    if (input == "e") {
+        location.href = 'secret.html';
+    }
+
+})

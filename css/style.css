@@ -85,6 +85,63 @@ header .desc_acc h1 {
     font-family: "Playwrite US Modern", cursive;
 }
 
+.masuk {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff6200;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.header {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: #1D2B53;
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 99;
+    transition: .5s ease;
+}
+
+.header.sticky {
+    top: 0;
+}
+
+.header .img {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.header .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header h3 {
+    font-size: 15px;
+    font-family: "Playwrite US Modern", cursive;
+}
+
+.header .secret_page {
+    position: absolute;
+    right: 20px;
+}
+
 .box_sosmed {
     padding: 45px 20px 20px;
     margin-top: 10px;
@@ -316,7 +373,64 @@ header .desc_acc h1 {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    font-size: 15px;
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 100px;
+}
+
+.secret {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000006b;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.secret.active {
+    display: flex;
+}
+
+.secret .form {
+    position: relative;
+    background: #1D2B53;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secret .form input[type=text] {
+    all: unset;
+    padding: 5px;
+    border-bottom: 3px solid #03A9F4;
+}
+
+.secret .form .send {
+    background: #03A9F4;
+    color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form .btn_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
