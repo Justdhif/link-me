@@ -210,9 +210,8 @@ header .desc_acc h1 {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: #1D2B53;
-    color: #fff;
-    padding: 15px;
+    background: transparent;
+    color: #1D2B53;
     border-radius: 10px;
 }
 
@@ -304,7 +303,7 @@ header .desc_acc h1 {
 
 .detail_skill {
     margin-top: 10px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
@@ -315,6 +314,7 @@ header .desc_acc h1 {
 
 .html {
     background: #ff6200;
+    display: flex;
 }
 
 .css {
@@ -416,6 +416,7 @@ header .desc_acc h1 {
 }
 
 .secret .form .send {
+    all: unset;
     background: #03A9F4;
     color: #000;
     width: 100%;
@@ -433,4 +434,80 @@ header .desc_acc h1 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+}
+
+.page .alert_content {
+    position: relative;
+    background: #21324e;
+    border-radius: 10px;
+    width: 350px;
+    height: 130px;
+}
+
+.page .alert_content .head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px 10px 0;
+}
+
+.page .alert_content .head::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: 1px;
+    background: #7dd3fc;
+}
+
+.page .alert_content .head::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 74.5%;
+    height: 85%;
+    background: #44566f80;
+    border: 1px solid #677c984d;
+    border-radius: 10px 10px 0 0;
+}
+
+.page .alert_content .head .text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7dd3fc;
+    padding: 2px 12px;
+}
+
+.page .alert_content .head .copy {
+    position: absolute;
+    top: 55%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    z-index: 99;
+}
+
+.page .alert_content .text_copy {
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.page .alert_content .text_copy i {
+    color: #f472b6;
 }

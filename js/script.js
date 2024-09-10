@@ -9,8 +9,13 @@ const typed = new Typed('.multiple-text', {
 const htmlBtn = document.getElementById('html');
 const cssBtn = document.getElementById('css');
 
+const lineHtml = document.querySelector('.html');
+const lineCss = document.querySelector('.css');
+
 htmlBtn.addEventListener('click', () => {
     document.getElementById('html_content').style.display = 'flex';
+    lineHtml.style.display = 'flex';
+    lineCss.style.display = 'none';
     document.getElementById('css_content').style.display = 'none';
 
     htmlBtn.classList.add('active');
@@ -20,6 +25,8 @@ htmlBtn.addEventListener('click', () => {
 cssBtn.addEventListener('click', () => {
     document.getElementById('html_content').style.display = 'none';
     document.getElementById('css_content').style.display = 'flex';
+    lineHtml.style.display = 'none';
+    lineCss.style.display = 'flex';
 
     htmlBtn.classList.remove('active');
     cssBtn.classList.add('active');
