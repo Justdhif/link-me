@@ -216,7 +216,7 @@ header .desc_acc h1 {
 }
 
 .skill_container {
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
@@ -510,4 +510,75 @@ header .desc_acc h1 {
 
 .page .alert_content .text_copy i {
     color: #f472b6;
+}
+
+.services_container {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.services_container  .services_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.services_container .services_box {
+    position: relative;
+    padding: 25px 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #855988, #6b4984, #483475, #2b2f77, #141852, #070b34);
+    border-radius: 10px;
+}
+
+.services_box .prev {
+    position: absolute;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    z-index: 10;
+    border: 2px solid var(--bg-color);
+}
+
+.services_box .prev.next {
+    right: 5px;
+}
+
+.services_box .prev.back {
+    left: 5px;
+}
+
+.services_box .services_card {
+    position: relative;
+    width: 10px;
+    height: 230px;
+    background: #262626;
+    color: var(--text-color);
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services_card #logo {
+    color: #0ef;
+    font-size: 28px;
+}
+
+.services_card .star_content {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
