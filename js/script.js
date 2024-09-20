@@ -10,12 +10,18 @@ var swiper = new Swiper(".services_box", {
     slidesPerView: 1,
     spaceBetween: 50,
     loop: true,
-    // effect: "fade",
+    effect: "cube",
     grabCursor: true,
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false,
-    // },
+    cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
     navigation: {
         nextEl: ".next",
         prevEl: ".back",

@@ -513,7 +513,6 @@ header .desc_acc h1 {
 }
 
 .services_container {
-    margin-top: 10px;
     width: 100%;
 }
 
@@ -524,13 +523,14 @@ header .desc_acc h1 {
 
 .services_container .services_box {
     position: relative;
-    padding: 25px 40px;
+    padding: 10px 40px 30px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg, #855988, #6b4984, #483475, #2b2f77, #141852, #070b34);
+    /* background: linear-gradient(120deg, #855988, #6b4984, #483475, #2b2f77, #141852, #070b34); */
     border-radius: 10px;
+    height: 300px;
 }
 
 .services_box .prev {
@@ -547,17 +547,15 @@ header .desc_acc h1 {
 }
 
 .services_box .prev.next {
-    right: 5px;
+    right: 0;
 }
 
 .services_box .prev.back {
-    left: 5px;
+    left: 0;
 }
 
 .services_box .services_card {
     position: relative;
-    width: 10px;
-    height: 230px;
     background: #262626;
     color: var(--text-color);
     border: 2px solid var(--bg-color);
@@ -574,6 +572,15 @@ header .desc_acc h1 {
     font-size: 28px;
 }
 
+.services_card .read_more {
+    background: #0ef;
+    width: 90px;
+    padding: 3px 0;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: .3rem;
+}
+
 .services_card .star_content {
     position: absolute;
     top: 10px;
@@ -581,4 +588,52 @@ header .desc_acc h1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.services_card .preview {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services_card .preview h3 {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.services_card .preview .preview_img {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 4px solid #262626;
+}
+
+.services_card .preview .preview_img:nth-child(1) {
+    position: relative;
+    z-index: 10;
+}
+
+.services_card .preview .preview_img:nth-child(2) {
+    position: absolute;
+    right: -13px;
+}
+
+.services_card .preview .preview_img:last-child {
+    position: absolute;
+    right: -25px;
+    background: #676767;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.services_card .preview .preview_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
