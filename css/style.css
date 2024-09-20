@@ -220,10 +220,6 @@ header .desc_acc h1 {
     flex-direction: column;
 }
 
-.skill_container.active {
-    display: flex;
-}
-
 .skill {
     position: relative;
     width: 100%;
@@ -360,7 +356,7 @@ header .desc_acc h1 {
 }
 
 .back_top {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
