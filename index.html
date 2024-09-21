@@ -208,13 +208,6 @@
                     </div>
                 </div>
             </div>
-
-            <a href="#" class="back_top">
-                <div class="top">
-                    <h3>Back to top</h3>
-                    <i class="fa-solid fa-arrow-up"></i>
-                </div>
-            </a>
         </div>
     </section>
 
@@ -230,6 +223,67 @@
         </form>
     </section>
 
+    <section class="ngl">
+        <div class="ngl_content">
+            <div class="acc">
+                <div class="img">
+                    <img src="aset/pp.jpg" alt="" width="10px">
+                </div>
+                <div class="desc_acc">
+                    <h3>@Justdhif</h3>
+                    <h3>Send me anynomous message</h3>
+                </div>
+            </div>
+            <form action="" id="contactForm">
+                <div class="input_container">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input_container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_container">
+            
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("5w1SdSv34eRVg7gFO"); // Ganti YOUR_USER_ID dengan User ID dari EmailJS
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Mengambil data dari form
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Kirim email melalui EmailJS
+            emailjs.send('service_lg3kiwd', 'template_f9eyerf', {
+                name: name,
+                email: email,
+                message: message
+            })
+            .then(function(response) {
+                document.getElementById('status').innerHTML = "Message Sent Successfully!";
+            }, function(error) {
+                document.getElementById('status').innerHTML = "Failed to send message!";
+            });
+        });
+    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>

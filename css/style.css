@@ -633,3 +633,141 @@ header .desc_acc h1 {
     height: 100%;
     object-fit: cover;
 }
+
+.ngl {
+    position: relative;
+    background: rgb(255,0,159);
+    background: linear-gradient(315deg, rgba(255,0,159,1) 0%, rgba(255,98,0,1) 57%, rgba(255,93,0,1) 100%);
+    width: 100%;
+    padding: 20px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+.ngl::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(180deg, #fff, #fff, transparent);
+}
+
+.ngl .ngl_content {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff82;
+    overflow: hidden;
+}
+
+.ngl .ngl_content .acc {
+    background: var(--text-color);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.ngl .ngl_content .acc .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.ngl .ngl_content .acc .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ngl .ngl_content .acc .desc_acc h3 {
+    font-size: 15px;
+}
+
+.ngl .ngl_content .acc .desc_acc h3:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 3px;
+    color: #00000085;
+}
+
+.ngl .ngl_content .message {
+    padding: 10px;
+}
+
+#contactForm {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input_container {
+    background: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    border-radius: .3rem;
+    border: 2px solid #ff6200;
+}
+
+.input_container i {
+    font-size: 20px;
+}
+
+.input_container input {
+    all: unset;
+    font-size: 12px;
+    width: 100%;
+}
+
+#contactForm textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: .3rem;
+    border: 2px solid #ff6200;
+    font-weight: 600;
+}
+
+#contactForm textarea:focus {
+    outline: none;
+}
+
+#contactForm button[type=submit] {
+    all: unset;
+    background: #1D2B53;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 94%;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #1D2B53;
+    padding: 20px;
+}
+
+footer .footer_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000000b;
+    backdrop-filter: blur(5px);
+}
