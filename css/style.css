@@ -700,6 +700,7 @@ header .desc_acc h1 {
 }
 
 #contactForm {
+    position: relative;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -754,6 +755,19 @@ header .desc_acc h1 {
     text-align: center;
 }
 
+.text_content {
+    width: 100%;
+    position: relative;
+}
+
+.text_content .shuffle_text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+    color: #ff5d00;
+}
+
 .latest_project {
     position: relative;
     display: flex;
@@ -800,6 +814,15 @@ header .desc_acc h1 {
     padding: 8px 16px;
     margin-top: 10px;
     border-radius: .3rem;
+}
+
+.location {
+    margin-top: 15px;
+    width: 100%;
+    height: 150px;
+    box-shadow: 0 0 5px 2px #00000047;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 footer {
