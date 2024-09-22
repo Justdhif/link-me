@@ -754,6 +754,54 @@ header .desc_acc h1 {
     text-align: center;
 }
 
+.latest_project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.latest_project .project_card {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.latest_project .project_card .img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.latest_project .project_card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.latest_project .project_card .desc_project {
+    padding: 10px;
+}
+
+.latest_project .project_card .desc_project h3 {
+    margin-bottom: 10px;
+}
+
+.latest_project .project_card .open {
+    background: #0ef;
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: .3rem;
+}
+
 footer {
     position: relative;
     width: 100%;
