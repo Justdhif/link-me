@@ -743,7 +743,7 @@ header .desc_acc h1 {
     outline: none;
 }
 
-#contactForm button[type=submit] {
+#contactForm button {
     all: unset;
     background: #1D2B53;
     color: #fff;

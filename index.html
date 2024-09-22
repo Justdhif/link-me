@@ -281,9 +281,8 @@
                     </div>
                 </div>
 
-                <button type="submit">Send</button>
-
-                <p id="status" style="color: #fff;"></p>
+                <button type="submit" id="send">Send</button>
+                <button id="succes" style="background: #00ff62; color: #262626; display: none;">Success <i class="fa-solid fa-check" style="margin-left: 5px;"></i></button>
             </form>
         </div>
     </section>
@@ -315,7 +314,8 @@
                 message: message
             })
             .then(function(response) {
-                document.getElementById('status').innerHTML = "Message Sent Successfully!";
+                document.getElementById('send').style.display = 'none';
+                document.getElementById('succes').style.display = 'block';
             }, function(error) {
                 document.getElementById('status').innerHTML = "Failed to send message!";
             });
@@ -323,10 +323,10 @@
 
         function generateRandomText() {
             const randomTexts = [
-                "The quick brown fox jumps over the lazy dog.",
-                "Hello, world!",
+                "What are your hobbies",
+                "hello, wanna date?",
                 "Stay positive and happy.",
-                "Learning is a never-ending process.",
+                "You have a girlfriend?",
                 "Coding is fun and creative.",
                 "Embrace the challenge, and grow with it.",
                 "Every day is a new opportunity."
