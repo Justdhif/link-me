@@ -1,93 +1,59 @@
-const typed = new Typed('.multiple-text', {
-    strings: [ 'Justdhif', 'Frontend', 'Gamer', 'Student'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
+const navBox = document.querySelectorAll('.nav_box');
+const boxGrid = document.querySelectorAll('.box_grid');
+
+navBox.forEach((list, idx) => {
+    list.addEventListener('click', () => {
+        document.querySelector('.nav_box.active').classList.remove('active');
+        list.classList.add('active');
+
+        document.querySelector('.box_grid.active').classList.remove('active');
+        boxGrid[idx].classList.add('active');
+    });
 });
 
-var swiper = new Swiper(".services_box", {
-    slidesPerView: 1,
-    spaceBetween: 50,
-    loop: true,
-    effect: "cube",
-    grabCursor: true,
-    cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-    },
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".next",
-        prevEl: ".back",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
+const burgerBtn = document.getElementById('checkbox');
+const moreContent = document.querySelector('.more');
+
+burgerBtn.addEventListener('click', () => {
+    moreContent.classList.toggle('active');
 });
 
-const htmlBtn = document.getElementById('html');
-const cssBtn = document.getElementById('css');
+function aboutPage() {
+    location.href = 'about.html';
+    moreContent.classList.remove('active');
+}
 
-const lineHtml = document.querySelector('.html');
-const lineCss = document.querySelector('.css');
+// const typed = new Typed('.multiple-text', {
+//     strings: [ 'Justdhif', 'Frontend', 'Gamer', 'Student'],
+//     typeSpeed: 100,
+//     backSpeed: 100,
+//     backDelay: 1000,
+//     loop: true
+// });
 
-htmlBtn.addEventListener('click', () => {
-    document.getElementById('html_content').style.display = 'flex';
-    lineHtml.style.display = 'flex';
-    lineCss.style.display = 'none';
-    document.getElementById('css_content').style.display = 'none';
-
-    htmlBtn.classList.add('active');
-    cssBtn.classList.remove('active');
-})
-
-cssBtn.addEventListener('click', () => {
-    document.getElementById('html_content').style.display = 'none';
-    document.getElementById('css_content').style.display = 'flex';
-    lineHtml.style.display = 'none';
-    lineCss.style.display = 'flex';
-
-    htmlBtn.classList.remove('active');
-    cssBtn.classList.add('active');
-})
-
-window.onscroll = () => {
-
-    let header = document.querySelector('.header');
-
-    header.classList.toggle('sticky', window.scrollY > 200);
-};
-
-const secret = document.querySelector('.secret');
-const masuk = document.querySelector('.masuk');
-const btnSecret = document.querySelector('.secret_page');
-
-masuk.addEventListener('click', () => {
-    secret.classList.add('active');
-})
-
-btnSecret.addEventListener('click', () => {
-    secret.classList.add('active');
-})
-
-document.querySelector('.btn_close').addEventListener('click', () => {
-    secret.classList.remove('active');
-})
-
-document.querySelector('.form').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const input = document.getElementById('input').value;
-    if (input == "e") {
-        location.href = 'secret.html';
-    }
-
-})
+// var swiper = new Swiper(".", {
+//     slidesPerView: 1,
+//     spaceBetween: 50,
+//     loop: true,
+//     effect: "cube",
+//     grabCursor: true,
+//     cubeEffect: {
+//         shadow: true,
+//         slideShadows: true,
+//         shadowOffset: 20,
+//         shadowScale: 0.94,
+//     },
+//     autoplay: {
+//         delay: 3500,
+//         disableOnInteraction: false,
+//     },
+//     navigation: {
+//         nextEl: ".next",
+//         prevEl: ".back",
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//         dynamicBullets: true,
+//     },
+// });

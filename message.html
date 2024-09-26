@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message - Justdhif</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+
+    <section class="ngl">
+        <div class="ngl_content">
+            <div class="acc">
+                <div class="img">
+                    <img src="aset/pp.jpg" alt="" width="10px">
+                </div>
+                <div class="desc_acc">
+                    <h3>@Justdhif</h3>
+                    <h3>Send me anynomous message</h3>
+                </div>
+            </div>
+            <form action="" id="contactForm">
+                <div class="input_container">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input_container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="text_content">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <div class="shuffle_text" onclick="generateRandomText()">
+                        <i class="fa-solid fa-dice"></i>
+                    </div>
+                </div>
+
+                <button type="submit" id="send">Send</button>
+                <button id="succes" style="background: #00ff62; color: #262626; display: none;">Success <i class="fa-solid fa-check" style="margin-left: 5px;"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("5w1SdSv34eRVg7gFO"); // Ganti YOUR_USER_ID dengan User ID dari EmailJS
+        })();
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Mengambil data dari form
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Kirim email melalui EmailJS
+            emailjs.send('service_lg3kiwd', 'template_f9eyerf', {
+                name: name,
+                email: email,
+                message: message
+            })
+            .then(function(response) {
+                document.getElementById('send').style.display = 'none';
+                document.getElementById('succes').style.display = 'block';
+            }, function(error) {
+                document.getElementById('status').innerHTML = "Failed to send message!";
+            });
+        });
+
+        function generateRandomText() {
+            const randomTexts = [
+                "What are your hobbies",
+                "hello, wanna date?",
+                "Stay positive and happy.",
+                "You have a girlfriend?",
+                "Coding is fun and creative.",
+                "Embrace the challenge, and grow with it.",
+                "Every day is a new opportunity."
+            ];
+
+            const randomIndex = Math.floor(Math.random() * randomTexts.length);
+            document.getElementById("message").value = randomTexts[randomIndex];
+        }
+
+    </script>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script> -->
+
+</body>
+</html>

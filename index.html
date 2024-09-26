@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>link - Justdhif</title>
+    <title>Home - Justdhif</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+
+    <!-- LIBRARY -->
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -22,323 +33,113 @@
 </head>
 <body>
     
-    <section class="body">
-        <header>
-            <div class="desc_acc">
-                <div class="img">
-                    <img src="aset/pp.jpg" alt="">
-                </div>
-                <h1>I'am <span class="multiple-text"></span></h1>
+    <header class="header">
+        <div class="logo">
+            <a href="#home"><i class='bx bx-home-alt'></i></a>
+        </div>
+        <h1 class="title">Justdhif</h1>
+        <div class="icon">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+        </div>
+        <div class="more">
+            <div class="content rating">
+                <i class="fa-solid fa-star"></i>
+                <h3>Rating</h3>
             </div>
-            <div class="masuk">
-                <i class="fa-solid fa-right-to-bracket"></i>
-            </div>
-        </header>
-
-        <div class="header">
-            <div class="img">
-                <img src="aset/pp.jpg" alt="">
-            </div>
-            <h3>Justdhif</h3>
-            <div class="secret_page">
-                <i class="fa-solid fa-right-to-bracket"></i>
+            <div class="content" onclick="aboutPage()">
+                <i class="fa-solid fa-circle-info"></i>
+                <h3>About</h3>
             </div>
         </div>
-
-        <div class="box_sosmed">
-            <div class="judul">
-                <div class="left">
-                    <i class="fa-regular fa-circle-dot" style="font-size: 20px;"></i>
-                    <h3>Fav Song</h3>
-                </div>
-                <a href=""><i class="fa-brands fa-spotify"></i> Open Spotify</a>
-            </div>
-            <div class="box_song">
-                <div class="img">
-                    <img src="aset/song.jpg" alt="">
-                </div>
-                <div class="desc_song">
-                    <h3>8 Letters</h3>
-                    <h3 style="font-size: 12px; font-weight: 500;">Why don't we</h3>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="profile">
+            <div class="img">
+                <img src="aset/pp.jpg" alt="" width="10px">
+                <div class="icon">
+                    <i class="fa-solid fa-check"></i>
                 </div>
             </div>
-
-            <div class="skill_container">
-                <h1 style="margin-top: 20px;" class="title"><i class="fa-regular fa-circle-dot"></i> Skill</h1>
-                <div class="skill">
-                    <div class="side">
-                        <div class="btn active" id="html"><i class="fa-brands fa-html5"></i></div>
-                        <div class="btn" id="css"><i class="fa-brands fa-css3-alt"></i></div>
-                        <!-- <div class="btn" id="js"><i class="fa-brands fa-square-js"></i></div> -->
-                    </div>
-                    <div class="skill_content" id="html_content">
-                        <i class="fa-brands fa-html5" style="color: #ff6200;"></i>
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="skill_content" id="css_content" style="display: none;">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <h3>CSS</h3>
-                    </div>
+            <div class="tab_review">
+                <div class="tab_box">
+                    <h1>2</h1>
+                    <h3>Project</h3>
                 </div>
-
-                <div class="detail_skill html">
-                    <div class="left">
-                        <i class="fa-brands fa-html5"></i>
-                        <div class="line"></div>
-                    </div>
-                    <h3>80%</h3>
+                <div class="tab_box">
+                    <h1>0</h1>
+                    <h3>Review</h3>
                 </div>
-                <div class="detail_skill css">
-                    <div class="left">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <div class="line"></div>
-                    </div>
-                    <h3>66%</h3>
+                <div class="tab_box">
+                    <h1 style="display: flex; align-items: center; gap: 5px;">0 <i class="fa-solid fa-star" style="font-size: 15px; margin-bottom: 3px;"></i></h1>
+                    <h3>Rating</h3>
                 </div>
             </div>
+            <div class="btn_content">
+                <a href="message.html" class="btn">Message</a>
+                <a href="#" class="btn"><i class="fa-solid fa-user" style="margin-right: 5px;"></i> CV</a>
+            </div>
 
-            <h1 style="margin-top: 20px;" class="title"><i class="fa-regular fa-circle-dot"></i> Services</h1>
+            <p class="bio">Trying to be better</p>
+        </div>
 
-            <div class="services_container">
-                <div class="services_wrapper">
-                    <div class="services_box mySwiper">
-                        <div class="services_content swiper-wrapper">
-                            <div class="services_card swiper-slide">
-                                <i class="fa-solid fa-code" id="logo"></i>
-                                <h1 style="font-size: 20px;">Developer</h1>
-                                <div class="read_more" style="margin-top: 0;">More</div>
-
-                                <div class="star_content">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </div>
-
-                                <div class="preview">
-                                    <h3>Preview :</h3>
-                                    <div class="preview_img">
-                                        <img src="aset/pp.jpg" alt="">
-                                    </div>
-                                    <div class="preview_img">
-                                        <img src="aset/pp.jpg" alt="">
-                                    </div>
-                                    <div class="preview_img">
-                                        <h3 style="font-size: 9px; margin-right: 0;">15+</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="services_card swiper-slide">
-                                <i class="fa-solid fa-palette" id="logo" style="color: #00ff62;"></i>
-                                <h1 style="font-size: 20px;">Design</h1>
-                                <div class="read_more" style="margin-top: 0; background: #00ff62;">More</div>
-
-                                <div class="star_content">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-
-                                <div class="preview">
-                                    <h3>Preview :</h3>
-                                    <div class="preview_img">
-                                        <img src="aset/pp.jpg" alt="">
-                                    </div>
-                                    <div class="preview_img">
-                                        <img src="aset/pp.jpg" alt="">
-                                    </div>
-                                    <div class="preview_img">
-                                        <h3 style="font-size: 9px; margin-right: 0;">20+</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="services_card swiper-slide">
-                                <i class="fa-solid fa-camera-retro" id="logo" style="color: #ff4ebe;"></i>
-                                <h1 style="font-size: 20px;">Photographer</h1>
-                                <div class="read_more" style="margin-top: 0; background: #ff4ebe;">More</div>
-
-                                <div class="star_content">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-
-                                <div class="preview">
-                                    <h3>Preview :</h3>
-                                    <div class="preview_img">
-                                        <img src="aset/pp.jpg" alt="">
-                                    </div>
-                                    <div class="preview_img">
-                                        <img src="aset/pp.jpg" alt="">
-                                    </div>
-                                    <div class="preview_img">
-                                        <h3 style="font-size: 9px; margin-right: 0;">20+</h3>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="container">
+            <div class="nav_list">
+                <div class="nav_box active">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="nav_box">
+                    <i class="fa-solid fa-list" style="transform: rotate(-90deg);"></i>
+                </div>
+            </div>
+            <div class="box_wrapper">
+                <div class="box_grid active">
+                    <div class="box_item">
+                        <div class="img">
+                            <img src="aset/project1.png" alt="" width="10px">
                         </div>
-                        
-                        <div class="prev back"><i class="fa-solid fa-arrow-left"></i></div>
-                        <div class="prev next"><i class="fa-solid fa-arrow-right"></i></div>
+                        <h4>Project 1</h4>
+                        <h3><span>Cek khodam</span></h3>
+                        <a href="" class="open">Open</a>
                     </div>
-                </div>
-            </div>
-
-            <h1 style="margin-top: 20px;" class="title"><i class="fa-regular fa-circle-dot"></i> Project</h1>
-
-            <div class="latest_project">
-                <div class="project_card">
-                    <div class="img">
-                        <img src="aset/project1.png" alt="">
-                    </div>
-                    <div class="desc_project">
-                        <h3 style="font-size: 18px;">Project 1 - <span style="color: #0ef;">Cek Khodam</span></h3>
-                        <p style="text-align: justify; font-size: 12px; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus suscipit vitae facilis officiis, laudantium quibusdam?</p>
+                    <div class="box_item">
+                        <div class="img">
+                            <img src="aset/project2.png" alt="" width="10px">
+                        </div>
+                        <h4>Project 2</h4>
+                        <h3><span>kalkulator</span></h3>
                         <a href="" class="open">Open</a>
                     </div>
                 </div>
-
-                <div class="project_card">
-                    <div class="img">
-                        <img src="aset/project2.png" alt="">
-                    </div>
-                    <div class="desc_project">
-                        <h3 style="font-size: 18px;">Project 2 - <span style="color: #ff1493;">Kalkulator Cinta</span></h3>
-                        <p style="text-align: justify; font-size: 12px; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus suscipit vitae facilis officiis, laudantium quibusdam?</p>
-                        <a href="" class="open" style="background: #ff1493; color: #fff;">Open</a>
+                <div class="box_grid">
+                    <!-- <div class="box_item">
+                        <h3>yayayay</h3>
+                    </div> -->
+                    <div class="empty">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <h3>Nothing preview</h3>
                     </div>
                 </div>
-            </div>
-
-            <h1 style="margin-top: 20px;" class="title"><i class="fa-regular fa-circle-dot"></i> Contact Me</h1>
-            <a href="http://wa.me/+6282113285557" class="box WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i>
-                <h3>WhatsApp</h3>
-            </a>
-            <a href="https://github.com/Justdhif" class="box github">
-                <i class="fa-brands fa-github"></i>
-                <h3>Github</h3>
-            </a>
-            <a href="https://www.instagram.com/justdhif.09?igsh=YTQ2OGU2b3M0bHVt" class="box Instagram">
-                <i class="fa-brands fa-instagram"></i>
-                <h3>Instagram</h3>
-            </a>
-            <a href="http://t.me/Justdhif" class="box Telegram">
-                <i class="fa-brands fa-telegram"></i>
-                <h3>Telegram</h3>
-            </a>
-            
-            <div class="location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.994131669464!2d106.8608824750718!3d-6.3947568625456785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb04c8c0e3d5%3A0x8a96bf2727712a42!2sKost%20Mama%20Tari%20(Nadhif%20%26%20Narend).!5e0!3m2!1sen!2sid!4v1727000888569!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
-    <section class="secret">
-        <form action="" class="form">
-            <div class="btn_close">
-                <i class="fa-brands fa-xing"></i>
-            </div>
-            <h3>Mau masuk?</h3>
-            <p style="font-size: 11.5px; font-weight: 600;"><i class="fa-solid fa-magnifying-glass"></i> = huruf ke 5 abjad</p>
-            <input type="text" name="" id="input" placeholder="Password">
-            <button type="submit" class="send">Send</button>
-        </form>
-    </section>
-
-    <section class="ngl">
-        <div class="ngl_content">
-            <div class="acc">
-                <div class="img">
-                    <img src="aset/pp.jpg" alt="" width="10px">
-                </div>
-                <div class="desc_acc">
-                    <h3>@Justdhif</h3>
-                    <h3>Send me anynomous message</h3>
-                </div>
-            </div>
-            <form action="" id="contactForm">
-                <div class="input_container">
-                    <i class="fa-solid fa-user-secret"></i>
-                    <input type="text" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="input_container">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="text_content">
-                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                    <div class="shuffle_text" onclick="generateRandomText()">
-                        <i class="fa-solid fa-dice"></i>
-                    </div>
-                </div>
-
-                <button type="submit" id="send">Send</button>
-                <button id="succes" style="background: #00ff62; color: #262626; display: none;">Success <i class="fa-solid fa-check" style="margin-left: 5px;"></i></button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer_container">
-            
-        </div>
+    <footer class="footer">
+        <a href="https://www.instagram.com/justdhif.09?igsh=YTQ2OGU2b3M0bHVt" class="box" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/Justdhif" class="box" id="github"><i class="fa-brands fa-github"></i></a>
+        <a href="http://wa.me/+6282113285557" class="box" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="http://t.me/Justdhif" class="box" id="telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="message.html" class="box" id="ngl">N</a>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("5w1SdSv34eRVg7gFO"); // Ganti YOUR_USER_ID dengan User ID dari EmailJS
-        })();
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // Mengambil data dari form
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Kirim email melalui EmailJS
-            emailjs.send('service_lg3kiwd', 'template_f9eyerf', {
-                name: name,
-                email: email,
-                message: message
-            })
-            .then(function(response) {
-                document.getElementById('send').style.display = 'none';
-                document.getElementById('succes').style.display = 'block';
-            }, function(error) {
-                document.getElementById('status').innerHTML = "Failed to send message!";
-            });
-        });
-
-        function generateRandomText() {
-            const randomTexts = [
-                "What are your hobbies",
-                "hello, wanna date?",
-                "Stay positive and happy.",
-                "You have a girlfriend?",
-                "Coding is fun and creative.",
-                "Embrace the challenge, and grow with it.",
-                "Every day is a new opportunity."
-            ];
-
-            const randomIndex = Math.floor(Math.random() * randomTexts.length);
-            document.getElementById("message").value = randomTexts[randomIndex];
-        }
-
-    </script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="js/script.js"></script>
 
 </body>
