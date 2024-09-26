@@ -23,6 +23,10 @@ function aboutPage() {
     moreContent.classList.remove('active');
 }
 
+function refreshPage() {
+    location.reload();
+}
+
 // const typed = new Typed('.multiple-text', {
 //     strings: [ 'Justdhif', 'Frontend', 'Gamer', 'Student'],
 //     typeSpeed: 100,
