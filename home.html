@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Justdhif</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+
+    <!-- LIBRARY -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <a href="#home"><i class='bx bx-home-alt'></i></a>
+            <i class='bx bx-refresh' style="font-size: 30px;" onclick="refreshPage()"></i>
+        </div>
+        <h1 class="title">Justdhif</h1>
+        <div class="icon">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+        </div>
+        <div class="more">
+            <div class="content rating">
+                <i class="fa-solid fa-star"></i>
+                <h3>Rating</h3>
+            </div>
+            <div class="content" onclick="aboutPage()">
+                <i class="fa-solid fa-circle-info"></i>
+                <h3>About</h3>
+            </div>
+        </div>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="profile">
+            <div class="img">
+                <img src="aset/pp.jpg" alt="" width="10px">
+                <div class="icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
+            <div class="tab_review">
+                <div class="tab_box">
+                    <h1>2</h1>
+                    <h3>Project</h3>
+                </div>
+                <div class="tab_box">
+                    <h1>0</h1>
+                    <h3>Review</h3>
+                </div>
+                <div class="tab_box">
+                    <h1 style="display: flex; align-items: center; gap: 5px;">0 <i class="fa-solid fa-star" style="font-size: 15px; margin-bottom: 3px;"></i></h1>
+                    <h3>Rating</h3>
+                </div>
+            </div>
+            <div class="btn_content">
+                <a href="message.html" class="btn">Message</a>
+                <a href="#" class="btn"><i class="fa-solid fa-user" style="margin-right: 5px;"></i> CV</a>
+            </div>
+
+            <p class="bio">Trying to be better</p>
+        </div>
+
+        <div class="container">
+            <div class="nav_list">
+                <div class="nav_box active">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="nav_box">
+                    <i class="fa-solid fa-list" style="transform: rotate(-90deg);"></i>
+                </div>
+            </div>
+            <div class="box_wrapper">
+                <div class="box_grid active">
+                    <div class="box_item">
+                        <div class="img">
+                            <img src="aset/project1.png" alt="" width="10px">
+                        </div>
+                        <h4>Project 1</h4>
+                        <h3><span>Cek khodam</span></h3>
+                        <a href="" class="open">Open</a>
+                    </div>
+                    <div class="box_item">
+                        <div class="img">
+                            <img src="aset/project2.png" alt="" width="10px">
+                        </div>
+                        <h4>Project 2</h4>
+                        <h3><span>kalkulator</span></h3>
+                        <a href="" class="open">Open</a>
+                    </div>
+                </div>
+                <div class="box_grid">
+                    <!-- <div class="box_item">
+                        <h3>yayayay</h3>
+                    </div> -->
+                    <div class="empty">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <h3>Nothing preview</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="https://www.instagram.com/justdhif.09?igsh=YTQ2OGU2b3M0bHVt" class="box" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/Justdhif" class="box" id="github"><i class="fa-brands fa-github"></i></a>
+        <a href="http://wa.me/+6282113285557" class="box" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="http://t.me/Justdhif" class="box" id="telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="message.html" class="box" id="ngl">N</a>
+    </footer>
+
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
